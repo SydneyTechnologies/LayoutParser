@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="flex">
+    <div class="flex-1">
+        <form action="" method="post" class="flex flex-col items-start">
+            <div class="w-full py-5 px-5 border-blue-500 border-2 border-1 rounded cursor-pointer">
+                <span class="z-10">Drag and Drop or <span>Choose file</span> to upload</span>
+                <input type="file" name="file" class="hidden">
+            </div>
+            <!-- <input type="submit" value="Upload File" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mt-2"> -->
+        </form>
+
+    </div>
+
+    <div class="flex-1">
+        Preview Section
+    </div>
+</div>
+{% endblock %}
